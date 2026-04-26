@@ -1376,7 +1376,10 @@ section.service-bg-white .spacer-top-left-25 {
 }
 
 .testimonial-box {
-  background-color: var(--background-alt-color);
+  background-color: var(--heading-color-3); /* Changed to make it look premium since it was maybe transparent or alt */
+  padding: 30px;
+  border-radius: 20px;
+  margin: 15px;
 }
 
 .testimonial-box img {
@@ -1385,8 +1388,42 @@ section.service-bg-white .spacer-top-left-25 {
   border-radius: 50px;
 }
 
+.testimonial-box p,
+.testimonial-box h5,
+.testimonial-box span {
+  color: #ffffff !important;
+}
+
 .testimonial-box p {
   font-size: var(--text-big);
+}
+
+/* Slick Dots Styling */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+  gap: 12px;
+}
+.slick-dots li {
+  margin: 0;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--heading-color-1);
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.slick-dots .slick-active button {
+  background-color: var(--heading-color-1);
 }
 
 .testimonial-box .bi-quote::before {
